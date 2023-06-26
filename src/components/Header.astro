@@ -8,20 +8,18 @@ import Themetoggle from './Themetoggle.astro';
     <div class="fi">
       <a href="." onclick="return false" mr-1 flex gap-2>
         <!-- <Logo /> -->
-        <span class="gpt-title <md:transition-all">Free Chat</span>
-        <span class="gpt-subtitle <md:transition-all dark:filter-sepia">16K✨</span>
+        <span class="gpt-title <md:transitio"> Free Chat </span>
+        <span class="gpt-subtitle <md:transition-all dark:filter-sepia">3.5✨</span>
       </a>
     </div>
     <div class="flex">
-      <a class="rounded-md h-10 grid transition-background-color w-10 place-items-center <md:transition-colors hover:bg-$c-fg-5" href="https://cdn.muspimerol.site/group.html">
+      <a class="rounded-md h-10 grid transition-background-color w-10 place-items-center <md:transition-colors hover:bg-$c-fg-5" href="https://chatgpt-chinaproxy.oss-cn-guangzhou.aliyuncs.com/20230614103310.jpg">
         <span class="text-lg i-mdi-wechat"></span>
-      </a>
-      <a class="rounded-md h-10 grid transition-background-color w-10 place-items-center <md:transition-colors hover:bg-$c-fg-5" href="https://cdn.muspimerol.site/sponsorship.html">
-        <span class="text-lg i-mingcute-pig-money-fill"></span>
       </a>
       <Themetoggle />
     </div>
   </div>
+  <div class="text-yellow-600 text-sm">用爱发电，有能力的请支持 <a href="https://chat.chinaproxy.top" class="underline"> ChatGPT4.0 </a></div>
   {
     import.meta.env.AD_IFRAME_URL && <div class="h-22 transition-all overflow-hidden sm:h-27">
       <iframe src={import.meta.env.AD_IFRAME_URL} class="rounded-lg bg-$c-fg-2 h-25 ring-inset mt-2 mb-1 w-full transition-all ring-$c-fg-40 select-none <sm:mt-3 <sm:w-125% <sm:scale-80% <sm:translate-x--1/10 <sm:translate-y--4 hover:bg-$c-fg-5 hover:ring-1.75"></iframe>
