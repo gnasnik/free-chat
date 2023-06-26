@@ -4,7 +4,6 @@ import IconClear from './icons/Clear'
 import MessageItem from './MessageItem'
 import SystemRoleSettings from './SystemRoleSettings'
 import ErrorMessageItem from './ErrorMessageItem'
-import TokenCounter from './TokenCounter'
 import type { ChatMessage, ErrorMessage } from '@/types'
 import type { Setter } from 'solid-js'
 
@@ -293,13 +292,6 @@ export default () => {
       )}
 
       { currentError() && <ErrorMessageItem data={currentError()} onRetry={retryLastFetch} /> }
-
-      <TokenCounter
-        currentSystemRoleSettings={currentSystemRoleSettings}
-        messageList={messageList}
-        textAreaValue={inputValue}
-        currentAssistantMessage={currentAssistantMessage}
-      />
 
       <Switch>
         <Match when={!mounted()}>
