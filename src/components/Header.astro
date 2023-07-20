@@ -19,8 +19,8 @@ import Themetoggle from './Themetoggle.astro';
       <Themetoggle />
     </div>
   </div>
-  <div class="text-yellow-600 text-sm"> 目前的文字限制为4k，如果你遇到超文本长度错误，请尝试清空聊天记录后重试</div>
-  <div class="text-yellow-600 text-sm">用爱发电，如果你有能力并且本站对你有帮助，请多支持<a href="https://chat.chinaproxy.top" class="underline"> ChatGPT4.0 </a></div>
+  <div class="text-gray-500 dark:text-gray-300 text-sm"> 目前的文字限制为4k，如果你遇到超文本长度错误，请尝试清空聊天记录后重试</div> 
+  <div class="text-gray-500 dark:text-gray-300 text-sm">用爱发电，如果你有能力并且本站对你有帮助，请多支持<a href="https://chat.chinaproxy.top" class="underline text-yellow-500 dark:text-yellow-300"> 👉 ChatGPT4.0 </a></div>
   {
     import.meta.env.AD_IFRAME_URL && <div class="h-22 transition-all overflow-hidden sm:h-27">
       <iframe src={import.meta.env.AD_IFRAME_URL} class="rounded-lg bg-$c-fg-2 h-25 ring-inset mt-2 mb-1 w-full transition-all ring-$c-fg-40 select-none <sm:mt-3 <sm:w-125% <sm:scale-80% <sm:translate-x--1/10 <sm:translate-y--4 hover:bg-$c-fg-5 hover:ring-1.75"></iframe>
